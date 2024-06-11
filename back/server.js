@@ -6,7 +6,7 @@ import express from 'express';
 
 const app = express();
 
-const { PORT } = process.env;
+const { PORT, B } = process.env;
 
 app.get('/', (req, res) => {
     res.send('¡Hola desde PFB!');
