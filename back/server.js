@@ -6,11 +6,7 @@ import express from 'express';
 
 const app = express();
 
-<<<<<<< HEAD
-const { PORT, A, MYSQL_PORTA } = process.env;
-=======
 const { PORT, A, MYSQL_PORT } = process.env;
->>>>>>> conflicto
 
 app.get('/', (req, res) => {
     res.send('¡Hola desde PFB!');
