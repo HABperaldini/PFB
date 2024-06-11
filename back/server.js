@@ -16,6 +16,10 @@ app.get('/login', (req, res) => {
     res.status(201).send('Login!!!');
 });
 
+app.use((req, res) => {
+    res.status(404).send('Recurso no encontrado');
+});
+
 app.listen(PORT, () => {
     console.log(`Server on ${PORT}`);
 });
