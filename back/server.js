@@ -6,7 +6,7 @@ import express from 'express';
 
 const app = express();
 
-const { PORT, A } = process.env;
+const { PORT, A, MYSQL_PORT } = process.env;
 
 app.get('/', (req, res) => {
     res.send('¡Hola desde PFB!');
