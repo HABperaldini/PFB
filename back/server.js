@@ -1,17 +1,17 @@
-"use strict"
-import dotenv from "dotenv";
+'use strict';
+import dotenv from 'dotenv';
 dotenv.config();
 
-import express from "express"
+import express from 'express';
 
 const app = express();
 
-const {PORT} = process.env
+const { PORT } = process.env;
 
-app.get("/", (req, res)=> {
-    res.send("¡Hola desde PFB!")
-})
+app.get('/', (req, res) => {
+    res.send('¡Hola desde PFB!');
+});
 
-app.listen(PORT, ()=>{
-    console.log(`Server on ${PORT}`)
-})
+app.listen(PORT, () => {
+    console.log(`Server on ${PORT}`);
+});
